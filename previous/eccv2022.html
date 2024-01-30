@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ECCV 2022 Medical Computer Vision Workshop</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+
+        <!-- icons -->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+
+        <style>
+
+        #navbar{
+        width:100%;
+        /*other styles*/
+        }
+
+        img.sponsorTHHI{
+                width:100%;
+            }
+
+        img.sponsorNVIDIA{
+            width:70%;
+        }
+
+        img.sponsorTEVA{
+            width:50%;
+            padding-top: 15%;
+        }
+
+        img.sponsorBGU{
+            width:60%;
+        }
+
+        @media screen and (min-width: 500px)
+        {
+            #content{
+                width:70%;
+                margin:0 auto;
+            }
+
+            img.sponsorBGU{
+            width:35%;
+        }
+
+        img.sponsorTHHI{
+        width:50%;
+        }
+
+        img.sponsorNVIDIA{
+        width:30%;
+        }
+
+        img.sponsorTEVA{
+            width:20%;
+            padding-top: 0%;
+        }
+
+        }
+
+        a {
+            color: #524000;
+        }
+
+        </style>
+
+    </head>
+    <body id="page-top">
+
+        <div id="navbar">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+
+                <!-- NAVBAR LINK AND LOGO -->
+                <a class="navbar-brand" href="https://eccv2022.ecva.net/"><img src="assets/img/logos/ECCV-logo-partial-white.png" alt="..." /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="#papers">Call for Papers</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="#updates">Updates</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/previous/list.html">Previous</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/">Current Edition</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#contactinfo">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+
+                <!-- HEADING TEXT -->
+                <div class="masthead-heading text-uppercase">
+                    ECCV 2022 Medical Computer Vision Workshop
+                </div>
+                <div class="masthead-subheading">
+                    <b>2022 October 23</b>
+                    <br />
+                    David Intercontinental Hotel, Salon B, Tel Aviv, Israel
+
+                </div>
+
+                <a class="btn btn-primary btn-xl text-uppercase" href="#schedule">SEE THE SCHEDULE</a>
+            </div>
+        </header>
+
+        </div>
+
+        <!-- SECTION TEMPLATE (light background) -->
+<!--
+        <\!-- CHANGE THE SECTION CLASS TO bg-light TO ALTERNATE BETWEEN THE BACKGROUND COLORS --\>
+        <section class="page-section bg" id="SECTION_ID">
+            <\!-- SECTION_ID SHOULD MATCH THE HREF IN THE NAVBAR --\>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">SECTION HEADER</h2>
+                    
+                    SECTION CONTENT
+                    
+                </div>
+            </div>
+        </section>
+-->
+
+        
+<section class="page-section bg-light" id="thanks">
+    <div class="container">
+        <div class="text-center">
+            
+            <h3>Thanks to all the speakers who helped make this virtual event a real success! All the talks can still be watched through the links below.</h3>
+            
+            <h3>
+                The workshop was featured in the <a href="https://www.rsipvision.com/ComputerVisionNews-2022November/42/">BEST OF ECCV of Computer Vision News</a>
+            </h3>
+        </div>
+    </div>
+</section>
+
+
+
+        <section class="page-section bg" id="sponsors">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Sponsors</h2>
+                    
+                    <p>
+                        Workshop is generously supported by:
+                    </p>
+                    
+            
+                    <a href="https://www.technion.ac.il/en/home-2/"><img src="assets/img/logos/THHI-logo-small.jpg" alt="..." class='sponsorTHHI'/></a>
+                    <a href="https://in.bgu.ac.il/Pages/default.aspx"><img src="assets/img/logos/bgu-logo-horizontal.png" alt="..." class='sponsorBGU'/></a>
+                    <br />
+                    <a href="https://www.nvidia.com/"><img src="assets/img/logos/NVIDIA_Logo_vertical.png" alt="..."  class='sponsorNVIDIA'/></a>
+                    <a href="https://www.gehealthcare.com/"><img src="assets/img/logos/ge-logo-large.png" alt="..."  class='sponsorNVIDIA'/></a>
+                    <a href="https://www.tevapharm.com/"><img src="assets/img/logos/teva-logo.png" alt="..."  class='sponsorTEVA'/></a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section bg-light" id="awards">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Awards</h2>
+                    <h3 class="section-subheading text-muted">We congratulate the winners of the best paper awards</h3>
+
+                    <h4>Best paper</h4>
+                    <b>
+                        <a href="https://youtu.be/B02Ix8aGbmw">Anatomy-Aware Contrastive Representation Learning for Fetal Ultrasound</a>
+                    </b>
+                <p>Zeyu Fu; Jianbo Jiao; Robail Yasrab; Lior Drukker; Aris Papageorghiou; Alison Noble</p>
+
+
+                    <h4>Runners-up</h4>
+
+                    <b>
+                        <a href="https://youtu.be/i4hSCPn74qM">Simultaneous Detection and Classification of Partially and Weakly Supervised Cells</a>
+                    </b>
+                  <p>Alona Golts; Ido Livneh; Aaron Ciechanover; Michael Elad</p>
+
+                    <b>
+                        <a href="https://youtu.be/WLi1_ySwstw">qDWI-Morph: Motion-compensated quantitative Diffusion-Weighted MRI analysis for fetal lung maturity assessment</a>    
+                    </b>
+                    <p>Yael Zaffrani-Reznikov; Onur Afacan; Sila Kurugol; Simon K Warfield; Moti Freiman</p>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Updates -->
+        <section class="page-section bg-light" id="updates">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Updates</h2>
+                    
+                <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/MedComVision?ref_src=twsrc%5Etfw">Tweets by MedComVision</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                
+        </div>
+            </div>
+        </section>
+
+
+
+        <!-- Call for papers -->
+<!--
+        <section class="page-section bg" id="papers">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Call for papers</h2>
+                </div>
+                <div class="row text-left" id="content">
+                    <p> The ECCV-MCV workshop will provide an opportunity to students, researchers, and developers in academia, industry, and healthcare to discuss and learn about recent advancements in computer vision for medical image analysis and computer-assisted interventions. The ultimate goal of the workshop is to bring together stakeholders interested in leveraging big data, machine learning, and computer vision techniques to build the next generation of tools and products to advance image-based healthcare.
+                        We strongly encourage authors to improve the reproducibility of their research by considering open data, open implementations, and appropriate evaluation design and reporting. Where possible, we invite authors to use open data or to make their data and code available for open access by other researchers. 
+                    </p>
+                        <p>
+                        The proceedings will be published by Springer under the “Lecture Notes in Computer Science” book series.
+                    </p>
+                    <p>
+                        The MCV-ECCV workshop will be held in conjunction with ECCV 2022, which is to take place in Tel-Aviv, Israel in Oct, 2022.
+                    </p>
+
+                    <p>
+                        We invite submissions of long papers adhering to the ECCV 2022 paper submission style, format, and length restrictions on any aspect of biomedical computer vision. <a href="https://cmt3.research.microsoft.com/ECCVMCV2022">Submissions will be handled through CMT3</a>. The papers will be evaluated by external reviewers and meta reviewers for inclusion in the ECCV Workshop Proceedings.
+
+                    </p>
+
+                    <p>
+                        Best paper awards, generously sponsored by Nvidia and the Technion’s Human Health initiative at the Technion - Israel Institute of Technology, will be awarded to the best papers.
+                    </p>
+
+                    <p>
+                        <a href="https://eccv2022.ecva.net/submission/call-for-papers/#:~:text=Submission%20Guidelines">Link to LateX template and sample submission here.</a>
+                    </p>
+
+
+
+                </div>
+            </div>
+        </section>
+-->
+
+
+
+
+    <!-- Schedule -->
+    <section class="page-section bg" id="schedule">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Workshop Schedule</h2>
+                    Video links will be live on October 23rd
+                        <table class="table table-responsive table-bordered table-hover table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td>9:00-9:10</td>
+                                        <td>Presenters set up</td>
+                                      </tr>    
+                                    <tr>
+                                    <td>9:10-9:15</td>
+                                    <td>Opening Remarks - Prof. Tal Arbel</td>
+                                  </tr>
+                                  <tr>
+                                    <td>9:15-9:45</td>
+                                    <td>Invited talk 1: Prof. Yonina Eldar, Weizmann Institute, Israel. <br>“Model Based Deep Learning for Medical Diagnosis”</td>
+                                  </tr>
+                                  <tr class="table-primary">
+                                    <td>9:45-10:45</td>
+                                    <td>Session 1: <br>Chairs: Prof. Tammy Riklin-Raviv, Dr. Moti Freiman</td>
+                                  </tr>
+                                  <tr>
+                                    <td>9:45-10:00</td>
+                                    <td>“Beyond Local Processing: Adapting CNNs for CT Reconstruction” (<a href="https://youtu.be/_uBF2GqzCWc">video link</a>) <br>Bassel Hamoud, Yuval Bahat, Tomer Michaeli. Technion - Israel Institute of Technology.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>10:00-10:15</td>
+                                    <td>“Simultaneous Detection and Classification of Partially and Weakly Supervised Cells” (<a href="https://youtu.be/i4hSCPn74qM">video link</a>) <br>Alona Golts, Ido Livneh, Yaniv Zohar, Aaron Ciechanover, Michael Elad.  Technion - Israel Institute of Technology.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>10:15-10:30</td>
+                                    <td>“Joint Calibrationless Reconstruction and Segmentation of Parallel MRI” (<a href="https://youtu.be/StTGi5rc5o4">video link</a>) <br>Aniket Pramanik, Mathews Jacob. The University of Iowa, IA, USA</td>
+                                  </tr>
+                                  <tr>
+                                    <td>10:30-10:45</td>
+                                    <td>“Multi-Scale Multi-Task distillation for incremental 3D medical image segmentation” (<a href="https://youtu.be/Z4XkAgh452w">video link</a>) <br>Mu Tian, Qinzhu Yang, Yi Gao. Shenzen Univ. China.</td>
+                                  </tr>
+                                  <tr class="table-primary">
+                                    <td>10:45-11:45</td>
+                                    <td>Session 2:  <br>Live Q&amp;A + Coffee break + poster session (<a href="https://www.youtube.com/playlist?list=PLhQmWLkjoMFNHN3vTTxYhj9ANOuN5Yc2g">video links</a>)</td>
+                                  </tr>
+                                  <tr>
+                                    <td>11:45-12:15</td>
+                                    <td>Invited talk 2: Prof. Alex Frangi, University of Leeds, UK. <br>“Precision Imaging for next Generation Regulation of Medical Products”</td>
+                                  </tr>
+                                  <tr class="table-primary">
+                                    <td>12:15-12:45</td>
+                                    <td>Industrial session: <br>Chairs: Dr. Ayelet Akselrod-Ballin, Dr. Moti Freiman</td>
+                                  </tr>
+                                  <tr>
+                                    <td>12:15-12:30</td>
+                                    <td>GE Healthcare</td>
+                                  </tr>
+                                  <tr>
+                                    <td>12:30-12:45</td>
+                                    <td>Asensus Surgical Ltd</td>
+                                  </tr>
+                                  <tr>
+                                    <td>12:45-14:15</td>
+                                    <td>Lunch Break</td>
+                                  </tr>
+                                  <tr class="table-primary">
+                                    <td>14:15-15:30</td>
+                                    <td>Session 3: <br>Chairs: Prof. Tal Arbel, Prof. Tammy Riklin-Raviv</td>
+                                  </tr>
+                                  <tr>
+                                    <td>14:15-14:30</td>
+                                    <td>“Estimating Withdrawal Time in Colonoscopies” (<a href="https://youtu.be/7_UKnOXOA5s">video link</a>) <br>Liran Katzir, Danny Veikherman, Valentin Dashinsky, Roman Goldenberg, Ilan Shimshoni, Nadav Rabani, Regev Cohen, Ori Kelner, Ehud Rivlin and Daniel Freedman. Google.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>14:30-14:45</td>
+                                    <td>“qDWI-Morph: Motion-compensated quantitative Diffusion-Weighted MRI analysis for fetal lung maturity assessment” (<a href="https://youtu.be/WLi1_ySwstw">video link</a>) <br>Yael Zaffrani-Reznikov, Onur Afacan, Sila Kurugol, Simon Warfield, Moti Freiman. Technion - Israel Institute of Technology.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>14:45-15:00</td>
+                                    <td>“Anatomy-Aware Contrastive Representation Learning for Fetal Ultrasound” (<a href="https://youtu.be/B02Ix8aGbmw">video link</a>) <br>Zeyu Fu, Jianbo Jiao, Robail Yasrab, Lior Drukker, Aris T. Papageorghiou, J. Alison Noble. University of Oxford, UK.</td>
+                                  </tr>
+                                  <tr class="table-primary">
+                                    <td>15:00-16:00</td>
+                                    <td>Session 4: <br>Live Q&amp;A + coffee break, posters session (<a href="https://www.youtube.com/playlist?list=PLhQmWLkjoMFMCEFggbOnzcuuvNoy330vi">video links</a>)</td>
+                                  </tr>
+                                  <tr>
+                                    <td>16:00 - 16:45</td>
+                                    <td>Panel: Career perspective. <br>Panelists: <br>Prof. Leo Joskowicz, The Hebrew Univ. of Jerusalem <br>Prof. Hayit Greenspan, Tel-Aviv University <br>Prof. Ilan Shelef, Soroka Medical Center and Ben-Gurion University <br>Prof. Ron Kikinis, Harvard Medical School, <br>Prof. William (Sandy) Wells, Harvard Medical School, <br>Prof. Tal Arbel, Mcgill University <br><br>Moderators: Dr. Ayelet Akselrod-Ballin, Prof. Tammy Riklin-Raviv, Dr. Moti Freiman</td>
+                                  </tr>
+                                  <tr>
+                                    <td>16:45</td>
+                                    <td>Best paper award, Closing Remarks</td>
+                                  </tr>
+                                  <tr>
+                                    <td>17:00</td>
+                                    <td>Happy hour</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+
+                            
+                </div>
+
+            </div>
+        </section>
+
+    <!-- Accepted Papers -->
+    <section class="page-section bg-light" id="papers">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">List of Accepted Papers</h2>
+
+                <a class="btn btn-primary btn-xl text-uppercase" href="./eccv2022presentations.html">Full list here</a>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+        <!-- About -->
+        <section class="page-section bg" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About the workshop</h2>
+                </div>
+                <div class="row text-left" id="content">
+
+                    <h4>
+                        Scope
+                    </h4>
+                    <p>The MCV workshop will provide an opportunity to students, researchers and developers in biomedical imaging companies to present, discuss and learn recent advancements in medical image analysis. The ultimate goal of the workshop is leveraging big data, deep learning and novel representation to effectively build the next generation of robust quantitative medical imaging parsing tools and products. Prominent applications include large scale cancer screening, computational heart modeling, landmark detection, neural structure and functional labeling and image-guided intervention. Computer Vision advancements and Deep learning in particular are rapidly transitioned to the medical imaging community in recent years. Additionally, there is a tremendous growth in startup activity applying medical computer vision algorithms to the healthcare industry. Collecting and accessing radiological patient images is a challenging task. Recent efforts include VISCERAL Challenge and Alzheimer’s Disease Neuroimaging Initiative. The NIH and partners are working on extracting trainable anatomical and pathological semantic labels from radiology reports that are linked to patients’ CT/MRI/X-ray images or volumes such as NCI’s Cancer Imaging Archive. The MCV workshop aims to encourage the establishment of public medical datasets to be used as unbiased platforms to compare performances on the same set of data for various disease findings.</p>
+
+                    <h4>
+                        Topics
+                    </h4>
+
+                    <p>Papers addressing topics related to medical computer vision are invited. The topics include, but are not limited to: 
+                    </p>
+
+                    <h5>General (with relation to medical imaging)</h5>
+                    <ul>
+                        <li>Deep Learning (e.g., architectures, transformers, optimization for deep networks)</li>
+                        <li>Reinforcement Learning (e.g., decision and control, planning, hierarchical RL, robotics)</li>
+                        <li>Few shot learning</li>
+                        <li>Federated learning</li>
+                        <li>Merging clinical data, textual data and imaging </li>
+                        <li>Domain adaption </li>
+                        <li>Representation learning</li>
+                        <li>Uncertainty estimation</li>
+                        <li>Active learning</li>
+                        <li>Safety, fairness, privacy, ethics</li>
+                        <li>Explainability,</li>
+                        <li>Human-AI interaction</li>
+                        </ul>
+
+                        <h5>Applications</h5>
+                        <ul>
+                            <li>Computational (Integrative) Pathology</li>
+                            <li>Computational Anatomy and Physiology </li>
+                            <li>Imaging Biomarkers</li>
+                            <li>Computational  Neuroscience and cognitive science</li>
+                            <li>Computer Aided Diagnosis</li>
+                            <li>Interventional Simulation Systems</li>
+                            <li>Image-Guided Interventions and Robot-Assisted Surgery</li>
+                            <li>Population Imaging and Imaging Genetics</li>
+                            <li>Surgical Data Science</li>
+                            <li>Biological and Cell Microscopy Imaging Analysis</li>
+                            <li>Mixed, Augmented and Virtual Reality</li>
+                            <li>Outcome/disease prediction</li>
+                            <li>Image Synthesis</li>
+                            <li>Classification and Detection</li>
+                            <li>Image Reconstruction</li>
+                            <li>Image Registration</li>
+                            <li>Semantic/Instance Segmentation and Detection</li>
+                            <li>Biological and Cell Microscopy Imaging Analysis</li>
+                            <li>Mixed, Augmented and Virtual Reality</li>
+                            <li>Shape Analysis</li>
+                            </ul>
+                            
+
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
+                                    Previous Workshops
+                                </a>
+                              </p>
+                              <div class="collapse" id="collapse">
+                                <div class="card card-body">
+                                    <ul>
+                                        <li><a href="https://sites.google.com/view/cvprmcv22/">2022 June 19</a></li>
+                                        <li><a href="https://sites.google.com/view/cvprmcv21">2021</a></li>
+                                        <li><a href="https://sites.google.com/view/cvprmcv19">2019</a></li>
+                                        <li><a href="https://sites.google.com/view/cvprmcv17">2017</a></li>
+                                    </ul>
+                                </div>
+                              </div>
+
+
+
+
+                            </div>
+            </div>
+        </section>
+
+        <!-- Speakers -->
+        <section class="page-section bg-light" id="speakers">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Speakers</h2>
+                    
+                    
+                <div class="row justify-content-center">
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/speakers/yonina-eldar.jpg" alt="..." />
+                            <h4>Prof. Yonina Eldar</h4>
+                            <p class="text-muted">Weizmann Institute</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.weizmann.ac.il/math/yonina/" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/speakers/alejandro-frangi.jpg" alt="..." />
+                            <h4>Prof. Alejandro Frangi</h4>
+                            <p class="text-muted">University of Leeds</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://eps.leeds.ac.uk/computing/staff/1535/professor-alejandro-f-frangi" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+
+
+                    <!--
+
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/speakers/cat.jpg" alt="..." />
+                            <h4>Namey McNameface</h4>
+                            <p class="text-muted">Speaker</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="large text-muted">
+                            <ul style="list-style-type:none">
+                                <li>Meep</li>
+                                <li>Meep</li>
+                                <li>Meep</li>
+                            </ul>
+
+                        </p></div>
+                </div>
+-->                
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Organizers -->
+        <section class="page-section bg" id="organizers">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Organizers</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/organizers/tal-arbel.jpg" alt="..." />
+                            <h4>Tal Arbel</h4>
+                            <p class="text-muted">McGill University</p>
+                            <a class="btn btn-dark btn-social mx-2" href="http://www.cim.mcgill.ca/~arbel/" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/organizers/ayelet-akselrod-ballin.jfif" alt="..." />
+                            <h4>Ayelet Akselrod-Balin</h4>
+                            <p class="text-muted">Reichman University</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/ayelet-akselrod-ballin-468a828/?originalSubdomain=il" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/organizers/vasileios-belagiannis.jpeg" alt="..." />
+                            <h4>Vasileios Belagiannis</h4>
+                            <p class="text-muted">Otto von Guericke University</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://isg.ovgu.de/" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/organizers/Qi-DOU.png" alt="..." />
+                            <h4>Qi Dou</h4>
+                            <p class="text-muted">Chinese University of Hong Kong</p>
+                            <a class="btn btn-dark btn-social mx-2" href="http://www.cse.cuhk.edu.hk/~qdou/" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/organizers/moti-freiman.jpg" alt="..." />
+                            <h4>Moti Freiman</h4>
+                            <p class="text-muted">Technion - Israel Institute of Technology</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://tcml-bme.github.io/index.html" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/organizers/nicolas-padoy.png" alt="..." />
+                            <h4>Nicolas Padoy</h4>
+                            <p class="text-muted">University of Strasbourg & IHU Strasbourg</p>
+                            <a class="btn btn-dark btn-social mx-2" href="http://camma.u-strasbg.fr/" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/organizers/tammy-riklin-raviv.jpg" alt="..." />
+                            <h4>Tammy Riklin-Raviv</h4>
+                            <p class="text-muted">Ben-Gurion University</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.ee.bgu.ac.il/~rrtammy/" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/organizers/mathias-unberath.jpg" alt="..." />
+                                <h4>Mathias Unberath</h4>
+                                <p class="text-muted">Johns Hopkins University</p>
+                                <a class="btn btn-dark btn-social mx-2" href="https://arcade.cs.jhu.edu/" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/organizers/Yuyin-Zhou.jpeg" alt="..." />
+                            <h4>Yuyin Zhou</h4>
+                            <p class="text-muted">University of California, Santa Cruz</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://yuyinzhou.github.io/" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+    
+                        </div>
+                    </div>
+
+                </div>
+           
+
+                
+                <!--
+                <div class="row">
+                    <div class="col-lg-3">
+
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/speakers/cat.jpg" alt="..." />
+                                <h4>MEEP</h4>
+                                <p class="text-muted">AFFIL</p>
+                                <a class="btn btn-dark btn-social mx-2" href="!#" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                    
+                    </div>
+                </div>
+            -->
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Program Committee</h2>
+            </div>
+                <div class="row text-left" id="content">
+<ul>
+    <li>
+        <a href="https://hoel.kervadec.science/">Hoel Kervadec</a>, Erasmus MC Rotterdam
+    </li>
+    <li>
+        <a href="http://cim.mcgill.ca/~amarkr/">Amar Kumar</a>, McGill University 
+    </li>
+    <li>
+        <a href="https://www.imperial.ac.uk/people/chen.chen15">Chen Chen</a>, Imperial College London 
+    </li>
+    <li>
+        <a href="https://cchen-cc.github.io/">Cheng Chen</a>, Chinese University of Hong Kong 
+    </li>
+    <li>
+        <a href="https://scholar.google.com/citations?user=7soRur0AAAAJ&hl=en">Roger David Soberanis Mukul</a>, Johns Hopkins University 
+    </li>
+    <li>
+        <a href="https://sahumanish.github.io/">Manish Sahu</a>, Johns Hopkins University
+    </li>
+    <li>
+        <a href="https://engineering.vanderbilt.edu/bio/jieying-wu">Prof. Wu, Jie Ying</a>, Vanderbilt University 
+    </li>
+    <li>
+        <a href="https://scholar.google.co.in/citations?user=FDWwdoQAAAAJ&hl=en">Vinkle Srivastav, PhD</a>, University of Strasbourg, France
+    </li>
+    <li>
+        <a href="https://case.edu/cancer/members/member-directory/satish-viswanath">Prof. Satish Viswanath</a>, Case Western Reserve University 
+    </li>
+    <li>
+        <a href="https://www.cilab.org.il/">Dr. Arnaldo Mayer</a>, Sheba Medical Center 
+    </li>
+    <li>
+        <a href="http://gaoyi.github.io/">Prof. Yi Gao</a>, Shenzhen University
+    </li>
+    <li>
+        <a href="https://scholar.google.co.il/citations?user=qKLK1kQAAAAJ&hl=en&oi=ao">Youssef Dawoud</a>, Ulm University
+    </li>
+    <li>
+        <a href="https://www.uni-ulm.de/in/mrm/institut/mitarbeiter/wissenschaftliche-mitarbeiter/hornauer-julia-m-sc/">Julia Hornauer</a>, Ulm University
+    </li>
+    <li>
+        <a href="https://scholar.google.com/citations?user=VKZtH1MAAAAJ&hl=en">Azade Farshad</a>, Technical University of Munich
+    </li>
+    <li>
+        <a href="https://research.polyu.edu.hk/en/persons/jing-qin">Prof. Jing Qin</a>, Hong Kong Polytechnic University
+    </li>
+    <li>
+        Arij Bouazizi, Ulm University
+    </li>
+    <li>
+        <a href="https://www.ariel.ac.il/Projects/trp/GeneralInformation.asp?numRec=751&id_lang=1">Assaf Hoogi</a>, Ariel University
+    </li>
+    <li>
+        <a href="https://www.dkfz.de/en/mic/team/people/Peter_Neher.html">Peter Neher </a>, German Cancer Research Center
+    </li>
+    <li>
+        Tal Nir, Asensus Surgical, LTD
+    </li>
+    <li>
+        <a href="http://www.benoitscherrer.com/">Benoit Scherrer</a>, Harvard Medical School
+    </li>
+    <li>
+        <a href="http://www.viz.ai/">Naama Mayer</a>, viz.ai
+    </li>
+</ul>
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="page-section bg-light" id="contactinfo">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row text-center" id="content">
+
+                    
+                    <form action="https://formspree.io/f/mqknyqkq"
+                    method="POST">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="_replyto" class="form-control">
+                                    <input type="hidden" name="_cc" value="ab.ayelet@gmail.com, arbel@cim.mcgill.ca, moti.freiman@bm.technion.ac.il, rrtammy@bgu.ac.il">
+
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="_subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-12">
+        
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <input type="submit" value="Send">
+        
+                    </form>
+        
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
